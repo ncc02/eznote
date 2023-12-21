@@ -13,7 +13,7 @@ STEP 4: Write a note by DjangoAdminSite
 
 ![image](https://github.com/ncc02/eznote/assets/53702773/80e9cec0-86df-4a2b-9c79-0a9242079d24)
 
-STEP 5: Go to .../notes (localhost or your-deploy-link)
+STEP 5: Go to .../ (localhost or your-deploy-link)
 
 ![image](https://github.com/ncc02/eznote/assets/53702773/d4a9c655-656c-4e0e-a803-5d75e62b8308)
 
