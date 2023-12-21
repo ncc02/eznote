@@ -1,0 +1,25 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Notes</title>
+</head>
+
+{% if list_note %}
+    
+<div class="list-group">
+    {% for note in list_note %}
+    <div class="card text-center">
+        <div class="card-body">
+            <h5 class="card-title">{{note.title}}</h5>
+            <p class="card-text"><small class="text-body-secondary">{{note.create_at}}</small></p>
+            <a href="{% url 'notes:detail' note.id %}" class="btn btn-primary">Go detail</a>
+            
+        </div>
+        
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<p>No notes are available.</p>
+{% endif %}
