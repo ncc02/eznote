@@ -30,7 +30,7 @@ STEP 6: Waiting a few second and then change your domain
 
  
 
-STEP 7: Login site ezNoteAdmin by username and password is "eznote" (you can modtify it at here)
+STEP 7: Access your domain -> Login site ezNoteAdmin by username and password is "eznote" (you can modtify it at here)
 ![image](https://github.com/ncc02/eznote/assets/53702773/123ead7b-1cae-43d0-9f72-365f26734fdd)
 
 
