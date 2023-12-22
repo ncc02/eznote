@@ -1,23 +1,66 @@
-# eznote
-This is a Django project that allows you to create a website for simple note-taking (use the power of the DjangoAdminSite)
+This is a step-by-step guide that enables you to create a website for writing your own notes:
 
-STEP 0: Set TIME_ZONE in setting.py (example in my country: TIME_ZONE = 'Asia/Ho_Chi_Minh')
+STEP 1: Fork my repository (or clone my code and push it on your repository)
 
-STEP 1: python manage.py createsuperuser
-
-STEP 2: python manage.py runserver
-
-STEP 3: Login .../admin (localhost or your-deploy-link)
-
-STEP 4: Write a note by DjangoAdminSite
-
-![image](https://github.com/ncc02/eznote/assets/53702773/80e9cec0-86df-4a2b-9c79-0a9242079d24)
-
-STEP 5: Go to .../ (localhost or your-deploy-link)
-
-![image](https://github.com/ncc02/eznote/assets/53702773/d4a9c655-656c-4e0e-a803-5d75e62b8308)
-
-![image](https://github.com/ncc02/eznote/assets/53702773/af4e3670-afc4-4fff-b690-55618c7b8db6)
+STEP 2: Create a account Railway
 
 
-STEP 6: Enjoy!
+STEP 3: Login and click "New Project" in /dashboard
+
+![image](https://github.com/ncc02/eznote/assets/53702773/26aa6b36-7748-4245-a5a5-419ef4cd0fcb)
+
+
+ 
+
+STEP 4: Chose github and typing "eznote"
+
+![image](https://github.com/ncc02/eznote/assets/53702773/93182da0-d668-4686-9fa9-da784bf122a8)
+
+
+ 
+
+STEP 5: Click "Deploy Now"
+![image](https://github.com/ncc02/eznote/assets/53702773/705763bf-7342-4b59-b70c-5acd0e4fa091)
+
+ 
+
+STEP 6: Waiting a few second and then change your domain
+![image](https://github.com/ncc02/eznote/assets/53702773/f548082f-f984-42cc-9d4a-c00db6201803)
+
+
+ 
+
+STEP 7: Login site ezNoteAdmin by username and password is "eznote" (you can modtify it at here)
+![image](https://github.com/ncc02/eznote/assets/53702773/123ead7b-1cae-43d0-9f72-365f26734fdd)
+
+
+
+STEP 8: Enjoy!
+
+
+User guide:  
+
+<1> The ezNote page allows you to view notes in two modes: list and detail.
+
+
+Exam List:
+![image](https://github.com/ncc02/eznote/assets/53702773/0771ab56-3678-4b96-a19c-555dc6e87f74)
+
+
+ 
+
+Exam Detail:
+![image](https://github.com/ncc02/eznote/assets/53702773/98e361b6-2cab-4f34-a8a8-5663e458e774)
+
+
+
+
+<2> The ezNoteAdmin page allows you to Create, Update, Delete, Hidden notes.
+Exam: 
+![image](https://github.com/ncc02/eznote/assets/53702773/6d56f51b-3712-4b7c-99e1-f5be95c64f2d)
+
+
+ 
+
+In the future, if there are some users, I will update it with additional features.
+Happy Coding :)
