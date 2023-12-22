@@ -1,4 +1,4 @@
-#This is a step-by-step guide that enables you to create a website for writing your own notes:
+# This is a step-by-step guide that enables you to create a website for writing your own notes:
 
 STEP 1: Fork my repository (or clone my code and push it on your repository)
 
@@ -38,7 +38,7 @@ STEP 7: Login site ezNoteAdmin by username and password is "eznote" (you can mod
 STEP 8: Enjoy!
 
 
-#User guide:  
+# User guide:  
 
 <1> The ezNote page allows you to view notes in two modes: list and detail.
 
