@@ -4,7 +4,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   
     <title>ezNote</title>
-  
+    <link rel="icon" type="image/png" href="./static/note.png">
     <style>
         .btn-outline-success {
         
@@ -15,6 +15,15 @@
     .btn-outline-success:hover {
         background-color: #417893;
     }
+
+    .xxx {
+  font-style: italic;
+  color: gray;
+}
+
+.leftxxx {
+  float: right;
+}
     </style>
 
   </head>
@@ -38,13 +47,16 @@
     <div class="card text-center">
         <div class="card-body">
             <h5 class="card-title">{{note.title}}</h5>
-            <p class="card-text"><small class="text-body-secondary">{{note.create_at}}</small></p>
             <a href="{% url 'notes:detail' note.id %}" class="btn btn-primary" style="color: white; background-color: #417893;  border: none;">Go detail</a>
             
         </div>
         
     </div>
     {% endfor %}
+    
+</div>
+<div class="leftxxx">
+<a href="https://github.com/ncc02/eznote"  rel="noopener" class="text-right xxx" target="_blank"><small class="text-body-secondary">guide</small></a>
 </div>
 {% else %}
 <p>No notes are available.</p>
