@@ -1,8 +1,8 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      1  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Detail</title>
+    <title>ezNote</title>
 <style>
 .center {
     display: flex;
@@ -12,10 +12,28 @@
 .center-btn {
     text-align: center;
 }
+.btn-outline-success {
+        
+        color: #417893;
+        border-color: #417893;
+    }
+
+    .btn-outline-success:hover {
+        background-color: #417893;
+    }
 
 
 </style>
 </head>
+<nav class="navbar navbar-light bg-light">
+  <div class="ml-auto">
+    <form class="form-inline">
+      <a href="{% url 'notes:index' %}" class="btn btn-outline-success">ezNote</a>
+
+      <a href="/admin" class="btn btn-sm btn-outline-secondary" target="_blank">Admin</a>
+    </form>
+  </div>
+</nav>
 
 <div class="center">
 <div class="card">
@@ -25,9 +43,10 @@
           
           <p class="card-text text-left">{{note.content|safe}}</p>
           <div class="center-btn">
-            <a href="{% url 'notes:index' %}" class="btn btn-primary">Back</a>
+            <a href="{% url 'notes:index' %}" class="btn btn-primary" style="color: white; background-color: #417893;  border: none;">Back</a>
           </div>
         </div>
         
 </div>
 </div>
+

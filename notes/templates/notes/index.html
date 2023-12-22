@@ -1,19 +1,45 @@
+
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+    <title>ezNote</title>
+  
+    <style>
+        .btn-outline-success {
+        
+        color: #417893;
+        border-color: #417893;
+    }
 
-    <title>Notes</title>
-</head>
+    .btn-outline-success:hover {
+        background-color: #417893;
+    }
+    </style>
+
+  </head>
+  
+  <nav class="navbar navbar-light bg-light">
+    <div class="ml-auto">
+        
+      <form class="form-inline">
+        <a href="{% url 'notes:index' %}" class="btn btn-outline-success">ezNote</a>
+
+        <a href="admin/" class="btn btn-sm btn-outline-secondary" target="_blank">Admin</a>
+      </form>
+    </div>
+  </nav>
+  
 
 {% if list_note %}
-    
+
 <div class="list-group">
     {% for note in list_note %}
     <div class="card text-center">
         <div class="card-body">
             <h5 class="card-title">{{note.title}}</h5>
             <p class="card-text"><small class="text-body-secondary">{{note.create_at}}</small></p>
-            <a href="{% url 'notes:detail' note.id %}" class="btn btn-primary">Go detail</a>
+            <a href="{% url 'notes:detail' note.id %}" class="btn btn-primary" style="color: white; background-color: #417893;  border: none;">Go detail</a>
             
         </div>
         
@@ -23,3 +49,4 @@
 {% else %}
 <p>No notes are available.</p>
 {% endif %}
+
