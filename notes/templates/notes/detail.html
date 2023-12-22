@@ -25,15 +25,7 @@
 
 </style>
 </head>
-<nav class="navbar navbar-light bg-light">
-  <div class="ml-auto">
-    <form class="form-inline">
-      <a href="{% url 'notes:index' %}" class="btn btn-outline-success">ezNote</a>
 
-      <a href="/admin" class="btn btn-sm btn-outline-secondary" target="_blank">Admin</a>
-    </form>
-  </div>
-</nav>
 
 <div class="center">
 <div class="card">
@@ -41,9 +33,17 @@
         <div class="card-header text-center"><h5 class="card-title">{{note.title}}</h5></div>
         <div class="card-body">
           
+          <div class="center">
+                <!-- <a href="{% url 'notes:index' %}" class="btn btn-outline-success">Back</a> -->
+                <a href="{% url 'notes:index' %}" class="btn btn-primary" style="color: white; background-color: #417893;  border: none;">Back</a>
+          
+                <a href="{% url 'admin:notes_note_change' note.id %}" class="btn btn-sm btn-outline-secondary" target="_blank">Change</a>
+          </div>
+
           <p class="card-text text-left">{{note.content|safe}}</p>
           <div class="center-btn">
-            <a href="{% url 'notes:index' %}" class="btn btn-primary" style="color: white; background-color: #417893;  border: none;">Back</a>
+            
+            <!-- <a href="{% url 'notes:index' %}" class="btn btn-primary" style="color: white; background-color: #417893;  border: none;">Back</a> -->
           </div>
         </div>
         

@@ -29,12 +29,13 @@
   </head>
   
   <nav class="navbar navbar-light bg-light">
+    <a href="{% url 'admin:notes_note_add' %}" class="btn btn-outline-success">Add</a>
+       
     <div class="ml-auto">
         
       <form class="form-inline">
-        <a href="{% url 'notes:index' %}" class="btn btn-outline-success">ezNote</a>
-
-        <a href="admin/" class="btn btn-sm btn-outline-secondary" target="_blank">Admin</a>
+        <a href="{% url 'notes:index' %}" class="btn btn-primary" style="color: white; background-color: #417893;  border: none;">ezNote</a>        
+        <a href="{% url 'admin:index' %}" class="btn btn-sm btn-outline-secondary">Admin</a>
       </form>
     </div>
   </nav>
@@ -47,7 +48,7 @@
     <div class="card text-center">
         <div class="card-body">
             <h5 class="card-title">{{note.title}}</h5>
-            <a href="{% url 'notes:detail' note.id %}" class="btn btn-primary" style="color: white; background-color: #417893;  border: none;">Go detail</a>
+            <a href="{% url 'notes:detail' note.id %}" class="btn btn-primary" style="color: white; background-color: #417893;  border: none;">Go</a>
             
         </div>
         
@@ -56,7 +57,7 @@
     
 </div>
 <div class="leftxxx">
-<a href="https://github.com/ncc02/eznote"  rel="noopener" class="text-right xxx" target="_blank"><small class="text-body-secondary">guide</small></a>
+<!-- <a href="https://github.com/ncc02/eznote"  rel="noopener" class="text-right xxx" target="_blank"><small class="text-body-secondary">guide</small></a> -->
 </div>
 {% else %}
 <p>No notes are available.</p>
