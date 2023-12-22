@@ -3,14 +3,31 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Detail</title>
+<style>
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-btn {
+    text-align: center;
+}
+
+
+</style>
 </head>
-<div class="card text-center">
+
+<div class="center">
+<div class="card">
     
-        <div class="card-header"><h5 class="card-title">{{note.title}}</h5></div>
+        <div class="card-header text-center"><h5 class="card-title">{{note.title}}</h5></div>
         <div class="card-body">
           
-          <p class="card-text">{{note.content|safe}}</p>
-          <a href="{% url 'notes:index' %}" class="btn btn-primary">Back</a>
+          <p class="card-text text-left">{{note.content|safe}}</p>
+          <div class="center-btn">
+            <a href="{% url 'notes:index' %}" class="btn btn-primary">Back</a>
+          </div>
         </div>
         
+</div>
 </div>
