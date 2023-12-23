@@ -62,7 +62,7 @@ STEP 8: Enjoy!
 Exam List:
 
 
-![image](https://github.com/ncc02/eznote/assets/53702773/0771ab56-3678-4b96-a19c-555dc6e87f74)
+![image](https://github.com/ncc02/eznote/assets/53702773/db482263-54fa-40ca-b0b6-87fcd1111a58)
 
 
  
@@ -70,12 +70,13 @@ Exam List:
 Exam Detail:
 
 
-![image](https://github.com/ncc02/eznote/assets/53702773/98e361b6-2cab-4f34-a8a8-5663e458e774)
+![image](https://github.com/ncc02/eznote/assets/53702773/c900a167-e963-4323-a37f-de66580e8966)
 
 
 
 
-<2> The ezNoteAdmin page allows you to Create, Update, Delete, Hidden notes.
+
+<2> The ezNoteAdmin page allows you to Hidden, Create, Read, Update, Delete notes.
 
 
 Exam: 
